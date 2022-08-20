@@ -17,3 +17,7 @@ jobs:
           -H 'Accept: application/vnd.github.everest-preview+json' \
           -u ${{ secrets.ACCESS_TOKEN }} \
           --data '{"event_type": "pr1", "client_payload": { "repository": "flooie/pingme" }}'
+      - name: ACK - Acknowledge pong from remote repository
+        if: github.event.action == 'pong'
+        run: |
+          echo "PONG received from '${{ github.event.client_payload.repository }}'" 
