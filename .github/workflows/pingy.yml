@@ -1,6 +1,8 @@
-name: Ping Sent
+name: Reporters-DB PR
+
 on:
   pull_request: # turn this to pull request and then identify the PR number send that and then run the code against it and pass it back.
+
 jobs:
   myEvent:
     runs-on: ubuntu-latest
@@ -10,5 +12,5 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           repository: flooie/pingme
-          event-type: my-event #this identifies the type of event that gets triggered.
+          event-type: reporters-db-pr #this identifies the type of event that gets triggered.
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}"}'
