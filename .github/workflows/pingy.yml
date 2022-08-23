@@ -12,5 +12,5 @@ jobs:
         with:
           token: ${{ secrets.TOKEN }}
           repository: flooie/pingme
-          event-type: reporters-db-pr #this identifies the type of event that gets triggered.
+          event-type: reporters-db-pr #this identifies the type of event that gets triggered
           client-payload: '{"ref": "${{ github.ref }}", "sha": "${{ github.sha }}", "gsha": "${{ github.event.pull_request.head.sha }}" }'
