@@ -14,10 +14,8 @@ jobs:
 
       - name: Create simple file
         run: |
-          touch benchmark/newfile.txt 
-          cd benchmark 
+          touch newfile.txt 
           ls
-          cd ..
 
       - name: Upload and Post Files to PR
         uses: gavv/pull-request-artifacts@v1.0.0
@@ -28,4 +26,4 @@ jobs:
           artifacts-branch: artifacts
           artifacts-dir: benchmark
           artifacts: |
-            benchmark/newfile.txt 
+            newfile.txt 
