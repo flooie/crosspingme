@@ -16,6 +16,7 @@ jobs:
         run: |
           touch newfile.txt 
           ls
+          echo ${{ github.event.pull_request.head.sha }}
 
       - name: Upload and Post Files to PR
         uses: gavv/pull-request-artifacts@v1.0.0
