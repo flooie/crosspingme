@@ -25,7 +25,8 @@ jobs:
         uses: gavv/pull-request-artifacts@v1.0.0
         with:
           repo-token: ${{ secrets.TOKEN }}
-          commit: ${{ github.event.push.head.sha }}
+          artifacts-token: ${{ secrets.TOKEN }}
+          commit: ${{ github.sha }}
           repo: pingme
           artifacts-branch: artifacts
           artifacts-dir: benchmark
