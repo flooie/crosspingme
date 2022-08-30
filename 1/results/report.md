@@ -13,57 +13,70 @@ There were 12 gains and 139 losses.
 | ---------- | ---------------- | ------------------------- |
 |  4678352   |                  |        Thompson, 9        |
 |  4678352   | 9 S.W.3d at 814  |                           |
-|  5605989   |                  | 86 N. Y. Supplement, 1003 |
 |  5605989   |                  |  57 N. Y. Supplement, 372 |
+|  5605989   |                  | 86 N. Y. Supplement, 1003 |
+|  5633658   |                  |        176 SE2d 268       |
+|  5633658   |                  |        40 SE2d 103        |
+|  5633658   |                  |        20 NE2d 982        |
 |  5633658   |                  |        46 NW2d 811        |
 |  5633658   |                  |         205 NE2d 1        |
 |  5633658   |                  |        168 SE2d 171       |
-|  5633658   |                  |        40 SE2d 103        |
-|  5633658   |                  |        176 SE2d 268       |
-|  5633658   |                  |        20 NE2d 982        |
 |  5651197   |                  |     13 Pac. (2d) 1068     |
 |  2663630   |                  |       Thompson, 224       |
 |  2663630   |  224 F.R.D. 236  |                           |
-|  1309369   |                  |        246 SE2d 475       |
-|  1309369   |                  |        241 SE2d 261       |
 |  1309369   |                  |        119 SE2d 691       |
-|  1309369   |                  |        247 SE2d 203       |
-|  1309369   |                  |        254 SE2d 838       |
 |  1309369   |                  |        242 SE2d 41        |
-|  1341018   |                  |        279 SE2d 289       |
-|  1341018   |                  |        349 SE2d 361       |
-|  1341018   |                  |        350 SE2d 29        |
-|  1341018   |                  |        309 SE2d 867       |
+|  1309369   |                  |        246 SE2d 475       |
+|  1309369   |                  |        247 SE2d 203       |
+|  1309369   |                  |        241 SE2d 261       |
+|  1309369   |                  |        254 SE2d 838       |
 |  1341018   |                  |        335 SE2d 303       |
+|  1341018   |                  |        279 SE2d 289       |
+|  1341018   |                  |        350 SE2d 29        |
+|  1341018   |                  |        349 SE2d 361       |
+|  1341018   |                  |        309 SE2d 867       |
 |  1341018   |                  |        367 SE2d 277       |
 |  1341018   |                  |        371 SE2d 914       |
 |  2496102   |   501 U.S. 722   |                           |
 |  2496102   |                  |       Thompson, 501       |
 |  2813797   |                  |        Thompson, 99       |
-|  1308185   |                  |        27 SE2d 659        |
-|  1308185   |                  |        187 SE2d 831       |
-|  1308185   |                  |       Thompson, 452       |
-|  1308185   |                  |        263 SE2d 916       |
 |  1308185   |                  |       444 NE2d 1071       |
-|  1308185   |                  |        77 SE2d 511        |
-|  1308185   |                  |         208 SE2d 5        |
 |  1308185   |                  |        60 SE2d 173        |
-|  1308185   |                  |        27 SE2d 375        |
+|  1308185   |                  |        263 SE2d 916       |
+|  1308185   |                  |        77 SE2d 511        |
 |  1308185   |                  |        213 SE2d 531       |
+|  1308185   |                  |         208 SE2d 5        |
 |  1308185   |                  |        220 SE2d 264       |
+|  1308185   |                  |        187 SE2d 831       |
+|  1308185   |                  |        27 SE2d 375        |
+|  1308185   |                  |        27 SE2d 659        |
+|  1308185   |                  |       Thompson, 452       |
 |  1343025   |                  |        266 SE2d 185       |
+|  1964781   | 858 P. 2d at 576 |                           |
 |  1964781   | 858 P. 2d at 580 |                           |
 |  1964781   | 858 P. 2d at 595 |                           |
-|  1964781   | 858 P. 2d at 576 |                           |
 |  1964781   | 858 P. 2d at 579 |                           |
 |  1054699   |                  |       Thompson, 519       |
 |  1610180   |                  |         47 FR 5752        |
 |  1610180   |                  |         50 FR 1912        |
-|  3018014   |   60 F.3d 514    |                           |
 |  3018014   |                  |        Thompson, 60       |
-|  1433305   |                  |        80 SE2d 387        |
+|  3018014   |   60 F.3d 514    |                           |
 |  1433305   |                  |        150 NE2d 100       |
+|  1433305   |                  |        80 SE2d 387        |
 
 
 </details>
+
+
+
+Time Chart
+---------
+
 ![image](https://raw.githubusercontent.com/flooie/crosspingme/artifacts/1/results/chart.png)
+
+
+Generated Files
+
+[Branch 1 Output](https://raw.githubusercontent.com/flooie/crosspingme/artifacts/1/results/original.json)
+[Branch 2 Output](https://raw.githubusercontent.com/flooie/crosspingme/artifacts/1/results/update.json)
+[Full Output CSV ](https://raw.githubusercontent.com/flooie/crosspingme/artifacts/1/results/output.csv)
