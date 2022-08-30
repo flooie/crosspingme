@@ -2,22 +2,30 @@ name: Remote Dispatch Action Initiator
 
 on:
   push:
-  schedule:
-    - cron: '0 12 * * *'
-  repository_dispatch:
 
 jobs:
-  ping-pong:
+  dispatch:
+    name: Reporters-DB-Dipatch
+    if: github.event_name == 'repository_dispatch'
     runs-on: ubuntu-latest
     steps:
-      - name: PING - Dispatch initiating repository event
-        if: github.event.action != 'pr1'
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v2
+
+      - name: Create simple file
         run: |
-          curl -X POST https://api.github.com/repos/flooie/pingme/dispatches \
-          -H 'Accept: application/vnd.github.everest-preview+json' \
-          -u ${{ secrets.ACCESS_TOKEN }} \
-          --data '{"event_type": "pr1", "client_payload": { "repository": "flooie/pingme" }}'
-      - name: ACK - Acknowledge pong from remote repository
-        if: github.event.action == 'pong'
-        run: |
-          echo "PONG received from '${{ github.event.client_payload.repository }}'" 
+          touch benchmark/newfile.txt 
+          cd benchmark 
+          ls
+          cd ..
+
+      - name: Upload and Post Files to PR
+        uses: gavv/pull-request-artifacts@v1.0.0
+        with:
+          repo-token: ${{ secrets.TOKEN }}
+          commit: ${{ github.event.push.head.sha }}
+          repo: pingme
+          artifacts-branch: artifacts
+          artifacts-dir: benchmark
+          artifacts: |
+            benchmark/newfile.txt 
