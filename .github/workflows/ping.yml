@@ -19,6 +19,7 @@ jobs:
           echo ${{ github.event.pull_request.head.sha }}
           echo ${{ github.event }}
           echo ${{ github.event.push.head.sha }}
+          echo ${{ github.sha }}
 
       - name: Upload and Post Files to PR
         uses: gavv/pull-request-artifacts@v1.0.0
