@@ -10,7 +10,7 @@ jobs:
       - name: Repository Dispatch
         uses: peter-evans/repository-dispatch@v2
         with:
-          token: ${{ secrets.TOKEN }}
+          token: ${{ secrets.TOKEN2 }}
           repository: flooie/pingme
           event-type: reporters-db-pr
-          client-payload: '{"ref": "${{ github.ref }}", "pr_number": "${{ github.event.number }}", "commit": "d341cf38693d3e79aa856bd37cd0843c58b66e05" }'
+          client-payload: '{"ref": "${{ github.ref }}", "pr_number": "${{ github.event.number }}", "commit": "${{ github.event.pull_request.head.sha }}" }'
